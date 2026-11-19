@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Coming Soon</title>
+<style>
+  :root {
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { height: 100%; }
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: #ffffff;
+    color: #1a1a1a;
+    font-family: "Helvetica Neue", Arial, "Hiragino Sans", "Noto Sans JP", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 100%;
+  }
+  .logos img {
+    display: block;
+    height: 64px;
+    width: auto;
+    max-width: 38vw;
+    object-fit: contain;
+  }
+  .placeholder {
+    width: 160px;
+    height: 64px;
+    border: 1px dashed #d9d9d9;
+    color: #8a8a8a;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-wrap: anywhere;
+  }
+  .divider {
+    width: 1px;
+    height: 48px;
+    background: #d9d9d9;
+  }
+  h1 {
+    font-size: clamp(1.75rem, 5vw, 3rem);
+    font-weight: 300;
+    letter-spacing: 0.08em;
+  }
+  @media (max-width: 600px) {
+    body { gap: 2rem; }
+    .logos { gap: 1.25rem; }
+    .logos img { height: 40px; }
+    .placeholder { width: 120px; height: 40px; font-size: 0.65rem; }
+    .divider { height: 28px; }
+  }
+</style>
+</head>
+<body>
+  <div class="logos">
+    <img src="fairydevices_logo.png" alt="Fairy Devices" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>fairydevices_logo.png</div>'">
+    <span class="divider" aria-hidden="true"></span>
+    <img src="asratec_logo.png" alt="Asratec" onerror="this.outerHTML='<div class=&quot;placeholder&quot;>asratec_logo.png</div>'">
+  </div>
+  <h1>Coming Soon</h1>
+</body>
+</html>
